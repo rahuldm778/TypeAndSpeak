@@ -49,6 +49,7 @@ if (isFirefox) {
     getVoices();
 }
 if (isChrome) {
+  getVoices();
     if (synth.onvoiceschanged !== undefined) {
         synth.onvoiceschanged = getVoices;
     }
